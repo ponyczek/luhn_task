@@ -2,10 +2,10 @@
 
 one:
   number: 1
-  type: 
+  provider: MyString
   validation: MyString
 
 two:
   number: 1
-  type: 
+  provider: MyString
   validation: MyString

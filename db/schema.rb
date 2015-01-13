@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150113135512) do
+ActiveRecord::Schema.define(version: 20150113174617) do
 
   create_table "credit_cards", force: true do |t|
     t.integer  "number"
-    t.string   "type"
+    t.string   "provider"
     t.string   "validation"
     t.datetime "created_at"
     t.datetime "updated_at"
