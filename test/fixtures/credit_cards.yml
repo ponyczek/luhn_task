@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  number: 1
+  number: MyString
   provider: MyString
   validation: MyString
 
 two:
-  number: 1
+  number: MyString
   provider: MyString
   validation: MyString

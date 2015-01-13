@@ -10,7 +10,7 @@ class CreditCard < ActiveRecord::Base
 
 	def find_type
 		# Making sure that the card number is passed as a string
-		credit_card = self.number.to_s
+		credit_card = self.number
 		# Set of statements to return the appropriate card type
 		# Firstly the code checks the cards's length
 		# Secondly regexp, returns 0 which signals validation
@@ -25,9 +25,9 @@ class CreditCard < ActiveRecord::Base
 
 	def luhn
     result = 0
-    nums = self.number.to_s.split("")
+    nums = self.number.gsub(/\D/, '').split("").reverse!
     nums.each_with_index do |item, index|
-      if index.even?
+      if index.odd?
       	if item.to_i*2>9
       		result+= item.to_i*2-9
         else 
@@ -43,4 +43,5 @@ class CreditCard < ActiveRecord::Base
       self.validation = "invalid"
     end
   end
+
 end
