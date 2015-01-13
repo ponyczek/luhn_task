@@ -23,7 +23,6 @@ class CreditCard < ActiveRecord::Base
 
 #Secondly applying the Luhn algorithm on the number to check is the number valid or not
 
-
 	def luhn
     result = 0
     nums = self.number.to_s.split("")
@@ -44,5 +43,4 @@ class CreditCard < ActiveRecord::Base
       self.validation = "invalid"
     end
   end
-
 end
