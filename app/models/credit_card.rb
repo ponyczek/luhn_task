@@ -10,7 +10,7 @@ class CreditCard < ActiveRecord::Base
 
 	def find_type
 		# Making sure that the card number is passed as a string
-		credit_card = self.number
+		credit_card = self.number.delete(' ')
 		# Set of statements to return the appropriate card type
 		# Firstly the code checks the cards's length
 		# Secondly regexp, returns 0 which signals validation
@@ -25,7 +25,7 @@ class CreditCard < ActiveRecord::Base
 
 	def luhn
     result = 0
-    nums = self.number.gsub(/\D/, '').split("").reverse!
+    nums = self.number.delete(' ').split("").reverse!
     nums.each_with_index do |item, index|
       if index.odd?
       	if item.to_i*2>9

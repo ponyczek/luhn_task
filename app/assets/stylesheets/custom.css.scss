@@ -1,0 +1,97 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+	padding-top: 55px;
+	background: rgba(227,223,227,1);
+	background: -moz-linear-gradient(left, rgba(227,223,227,1) 0%, rgba(255,255,255,1) 49%, rgba(227,223,227,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(227,223,227,1)), color-stop(49%, rgba(255,255,255,1)), color-stop(100%, rgba(227,223,227,1)));
+	background: -webkit-linear-gradient(left, rgba(227,223,227,1) 0%, rgba(255,255,255,1) 49%, rgba(227,223,227,1) 100%);
+	background: -o-linear-gradient(left, rgba(227,223,227,1) 0%, rgba(255,255,255,1) 49%, rgba(227,223,227,1) 100%);
+	background: -ms-linear-gradient(left, rgba(227,223,227,1) 0%, rgba(255,255,255,1) 49%, rgba(227,223,227,1) 100%);
+	background: linear-gradient(to right, rgba(227,223,227,1) 0%, rgba(255,255,255,1) 49%, rgba(227,223,227,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3dfe3', endColorstr='#e3dfe3', GradientType=1 );
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.field {
+	margin: 0 auto;
+}
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 2px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+  text-align: center;
+}
+
+footer a:hover {
+  color: #123123;
+}
+
+footer small {
+  float: center;
+}
+
+table{
+	width: 700px;
+	margin: 0 auto;
+}
+
+form{
+	margin: 0 auto;
+}
