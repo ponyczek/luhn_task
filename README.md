@@ -40,9 +40,7 @@ This card is not valid.
 
 
 
-## Beta Application Available here
-
-Install the gem by running
+## Beta version of the application available here
 
 ```html
 https://luhnvalidatortask.herokuapp.com/credit_cards
